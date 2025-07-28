@@ -3,7 +3,7 @@ import axios from "axios";
 export const axiosInstance = axios.create({
   baseURL:
     import.meta.env.MODE === "development"
-      ? "https://love-leetcode-backend.onrender.com/api/v1"
-      : "https://love-leetcode-backend.onrender.com/api/v1",
+      ? "http://localhost:3000/api/v1"
+      : "https://leetcode-r4zq.onrender.com",
   withCredentials: true,
 });
