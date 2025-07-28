@@ -23,7 +23,7 @@ const app = express();
 // }))
 
 const corsOptions = {
-  origin: ["https://loveleetcode.ashishshah.me", "http://localhost:5173/"], // replace with your frontend origin
+  origin: ["https://leetcode.ashishshah.me", "http://localhost:5173"], // replace with your frontend origin
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
