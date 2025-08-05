@@ -12,8 +12,7 @@ import {
   PenBoxIcon,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { useAuthStore } from "../store/useAuthStore";
+import useAuthStore from "./store/useAuthStore.js";
 import { useActions } from "../store/useAction";
 import { usePlaylistStore } from "../store/usePlaylistStore";
 import AddToPlaylistModal from "../components/AddToPlaylist";
