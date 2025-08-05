@@ -23,7 +23,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import useAuthStore from "./store/useAuthStore.js";
+import useAuthStore from "../store/useAuthStore";
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 

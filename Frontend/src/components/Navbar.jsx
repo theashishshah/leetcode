@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Code, User, LogOut } from "lucide-react";
 
-import useAuthStore from "./store/useAuthStore.js";
+import useAuthStore from "../store/useAuthStore";
 import LogoutButton from "./LogoutButton";
 
 const Navbar = () => {

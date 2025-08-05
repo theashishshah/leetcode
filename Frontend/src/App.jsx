@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import useAuthStore from '@/store/useAuthStore.js'; // if alias @ is set to /src
+import useAuthStore from "./store/useAuthStore.js"; // ✅ Correct if filename is 'useAuthStore.js'
 import Loader from "./components/Loader";
 
 import Layout from "./layout/Layout";

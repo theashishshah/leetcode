@@ -34,7 +34,7 @@ import {
 import { useProblemStore } from "../store/useProblemStore";
 import { usePlaylistStore } from "../store/usePlaylistStore";
 import { useSubmissionStore } from "../store/useSubmissionStore";
-import useAuthStore from "./store/useAuthStore.js";
+import useAuthStore from "../store/useAuthStore";
 import CreatePlaylistModal from "../components/CreatePlaylistModal";
 import { Link } from "react-router-dom";
 
