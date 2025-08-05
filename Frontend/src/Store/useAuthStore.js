@@ -8,6 +8,7 @@ export const useAuthStore = create((set) => ({
   isLoggingIn: false,
   isCheckingAuth: false,
 
+  
   checkAuth: async () => {
     set({ isCheckingAuth: true });
     try {
@@ -15,12 +16,14 @@ export const useAuthStore = create((set) => ({
 
       set({ authUser: res.data });
     } catch (error) {
-      // console.log("❌ Error checking auth:", error);
+      console.log("❌ Error checking auth:", error);
       set({ authUser: null });
     } finally {
       set({ isCheckingAuth: false });
     }
   },
+
+
 
   registers: async (data) => {
     set({ isRegistered: true });
@@ -38,6 +41,9 @@ export const useAuthStore = create((set) => ({
     }
   },
 
+
+  
+
   login: async (data) => {
     set({ isLoggingIn: true });
     try {
@@ -54,6 +60,9 @@ export const useAuthStore = create((set) => ({
       set({ isLoggingIn: false });
     }
   },
+
+
+
 
   logout: async () => {
     try {
